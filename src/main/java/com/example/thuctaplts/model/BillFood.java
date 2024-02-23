@@ -23,7 +23,7 @@ public class BillFood extends BaseEntity{
     private Bill bill;
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "foodID", foreignKey = @ForeignKey(name = "fk_BillFood_Bill"))
+    @JoinColumn(name = "foodID", foreignKey = @ForeignKey(name = "fk_BillFood_Food"))
     @JsonManagedReference
     private Food food;
 }

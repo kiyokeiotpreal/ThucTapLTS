@@ -23,7 +23,7 @@ public class RankCustomer extends BaseEntity{
 
     private String name;
 
-    private boolean isActive;
+    private boolean isActive = true;
 
     @OneToMany(mappedBy = "rankCustomer",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonBackReference
